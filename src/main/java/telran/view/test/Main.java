@@ -1,15 +1,12 @@
 package telran.view.test;
 
-import telran.view.InputOutput;
-import telran.view.Item;
-import telran.view.Menu;
-import telran.view.StandardInputOutput;
+import telran.view.*;
 
 public class Main {
     public static void main(String[] args) {
-        InputOutput io = new StandardInputOutput();
-        Item[] items = CalculatorItems.getItems(new SimpleCalculator());
-        Menu menu = new Menu(items);
-        menu.perform(io);
+       InputOutput io = new StandardInputOutput();
+       Item[] items = CalculatorItems.getItems(new SimpleCalculator());
+       Menu menu = new Menu("Calculator", items);
+       menu.perform(io);
     }
 }

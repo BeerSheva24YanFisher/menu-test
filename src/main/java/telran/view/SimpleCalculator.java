@@ -1,6 +1,6 @@
-package telran.view.test;
+package telran.view;
 
-public class SimpleCalculator implements Calculator {
+public class SimpleCalculator implements Calculator{
 
     @Override
     public double add(double op1, double op2) {
@@ -8,7 +8,7 @@ public class SimpleCalculator implements Calculator {
     }
 
     @Override
-    public double substract(double op1, double op2) {
+    public double subtract(double op1, double op2) {
         return op1 - op2;
     }
 
